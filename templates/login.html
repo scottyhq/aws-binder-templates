@@ -1,0 +1,18 @@
+{% extends "templates/login.html" %}
+{% set announcement = '' %}
+
+{% block main %}
+<div class="container text-center pangeo">
+    <img src="{{static_url("extra-assets/images/icesat-2-pangeo-logo.svg")}}" alt='Logo'>
+    <h2>{{ pangeo_hub_subtitle }}</h2>
+    <p>
+      {% if pangeo_welcome %}
+      {{ (pangeo_welcome | safe) }}
+      {% else %}
+      Welcome to this Pangeo JupyterHub. For more information about Pangeo,
+      visit <a href="http://pangeo.io">pangeo.io</a>.
+      {% endif %}
+    </p>
+</div>
+{{ super() }}
+{% endblock %}
