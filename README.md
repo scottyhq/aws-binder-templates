@@ -1,5 +1,5 @@
-# Custom JupyterHub Templates for Pangeo
+# Custom JupyterHub Templates for Pangeo AWS Binder
 
-This repo contains html jinja2 templates for customising the appearance of JupyterHub. Each HTML file here will override the files in `https://github.com/jupyterhub/jupyterhub/tree/master/share/jupyter/hub/templates`.
+This repo contains html jinja2 templates for customising the appearance of JupyterHub: https://jupyterhub.readthedocs.io/en/stable/reference/templates.html.
 
-This is used in conjunction with https://github.com/pangeo-data/pangeo-cloud-federation/tree/staging/deployments/icesat2
+Used for https://aws-uswest2-binder.pangeo.io, deployment config: https://github.com/pangeo-data/pangeo-binder/
